@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Login-DeTourism: Wisata Daerah Karasid</title>
-	<link rel="stylesheet" type="text/css" href="CSSLOGIN.css">
-	<div class="atas1">
-		<h5>Welcome! to</h5>
-	</div>
-	<div class="atas2">
-		<i><font type= "logo" size="10" color="BLACK">Detourism</font></i>
-	</div>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lupa Password-Detourism: Wisata Daerah Karasid</title>
+    <link rel="stylesheet" type="text/css" href="CSS1.css">
+    <div class="atas1">
+      <h5>Welcome! to</h5>
+    </div>
+    <div class="atas2">
+      <i><font type= "logo" size="10" color="BLACK">Detourism</font></i>
+    </div>
 </head>
+
 <body>
 	<div class="wrapper">
 		<h2><center>LOGIN</center></h2>
-		<div>
-			<p id="demo" style="color:red"></p>
-			<label>Email</label>
-			<input type="text" name="email" placeholder="email"><br>
-		</div>
-		<div>
+		<form class="" action="index.html" method="post" name="frm">
+			<div class="form">
+				<label>Email or Username</label>
+				<input type="text" name="email or username" placeholder="email or username" required>
+			
+				<label>Password</label>
+				<input type="password" name="password" placeholder="password" required>
 
-			<label>Password</label>
-			<input type="password" name="password" placeholder="password"><br>
-		</div>
-		<div class="button">
-			<td><a href="home BARU (1).html"><input type="button" value="LogIn" onclick="login()"></a></td>
-		</div>
+				<div class="button">
+					<center><a href="home BARU (1).html"><input type="button" value="LogIn" onclick="return IsEmpty();"></a></center>
+				</div>
+			</div>
+		</form>
+		<center><u><h4><font color="BLUE"><a href="lupapassword.html">forgot your password?</a></font></h4></u></center>
 		<center>
 			<h5>Doesn't already have an account?</h5>
 			<h5>register now!</h5>
 			<u><h4><font color="BLUE"><a href="index.html">SignUp</a></font></h4></u>
 		</center>
 	</div>
-	<div class="bawah">
+		<div class="bawah2">
 		<center>
 			<h4>Explore your tours in the Besuki area : Jember City, Banyuwangi City, Bondowoso City, Situbondo City</h4>
 		</center>
 	</div>
-	<script>
-	  	function login (){
-	  		window.alert("Login dulu dong.. masukkan email dan password dengan benar ya..")
-	  	}
-	</script>
+	<!-- validasi -->
+    <script type="text/javascript">
+          function IsEmpty (){
+            if (document.forms['frm'].password .value === "") {
+              alert("please fill in your email/username and password..");
+              return false;
+            }
+              confirm("Click, to Continue");
+            return true;
+          }
+    </script>
+
 </body>
 </html>
 </DOCTYPE>

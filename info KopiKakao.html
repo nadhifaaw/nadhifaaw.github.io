@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Info KopiKakao-DeTourism: Wisata Daerah Karasid</title>
-	<link rel="stylesheet" type="text/css" href="info.css">
-	<div class="atas1">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Info-Detourism: Wisata Daerah Karasid</title>
+    <link rel="stylesheet" type="text/css" href="CSS2.css">
+    <div class="atas1">
 		<h5>Welcome! to</h5>
 	</div>
 	<div class="atas2">
@@ -26,6 +27,7 @@
 		<div class="gambar">
 			<img id="gambar" src="kopi kakaao.jpeg">
 		</div>
+		<form class="form" action="index.html" method="post" name="frm">
 		<div class="checkbox">
 			<table>
 				<tr>
@@ -49,6 +51,17 @@
 			</table>
 		</div>
 	</div>
+	<!-- validasi -->
+    <script type="text/javascript">
+          function IsEmpty (){
+            if (document.forms['frm'].password .value === "") {
+              alert("please fill in the forms first..");
+              return false;
+            }
+              confirm("Are you sure want to edit your profile account?");
+            return true;
+          }
+    </script>
 </body>
 </html>
 </DOCTYPE>

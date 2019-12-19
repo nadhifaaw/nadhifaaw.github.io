@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Pemesanan-DeTourism: Wisata Daerah Karasid</title>
-	<link rel="stylesheet" type="text/css" href="pemesanan BARU.css">
+	<link rel="stylesheet" type="text/css" href="CSS2.css">
 	<div class="atas1">
 		<h5>Welcome! to</h5>
 	</div>
-	<div class="atas 	2">
+	<div class="atas2">
 		<i><font type= "logo" size="10" color="BLACK">Detourism</font></i>
 	</div>
 	</div>
@@ -22,6 +22,7 @@
 <body>
 	<div class="pemesanan">
 		<center><h2>Pemesanan Tiket Wisata</h2></center>
+		<form class="" action="Pesan DeTourism BARU.html" method="post" name="frm">
 			<div>
 				<label>Destinasi</label>
 				<input type="text" placeholder="destinasi"><br>
@@ -41,18 +42,50 @@
 			<div>
 				<h4>Bayar Lewat?</h4>
 				<input type="radio" name="Cara Bayar" value="Indomaret">Indomaret
+			</div>
 			<div>
 				<input type="radio" name="Cara Bayar" value="Cash">Cash
 			</div>
 			<div class="button">
-				<input type="button" name="pesan-button" value="Submit">
+				<a href="#modal-one"><input type="button"onclick="return IsEmpty();" name="pesan-button" value="Submit"></a>
 			</div>
+		</form>
 	</div>
+
 	<div class="bawah">
 		<center>
 			<h4>Explore your tours in the besuki area : Jember City, Banyuwangi City, Bondowoso City, Situbondo City</h4>
 		</center>
 	</div>
+
+<!-- validasi -->
+    <script type="text/javascript">
+          function IsEmpty (){
+            if (document.forms['frm'].password .value === "") {
+              alert("please fill in the forms first..");
+              return false;
+            }
+              confirm("#modal-one");
+            return true;
+          }
+    </script>
+	<!-- Modal -->
+	<div class="modal" id="modal-one" aria-hidden="true">
+	  	<div class="modal-dialog">
+	    	<div class="modal-header">
+	      		<h2>Manage Account</h2>
+	      		<a href="#close" class="btn-close" aria-hidden="true">×</a> 
+	    	</div>
+	    	<div class="modal-body">
+	      		<h4><font color="GREEN">Are you sure want to order this ticket?</font></h4>
+	    	</div>
+	    	<div class="modal-footer">
+	      		<a href="home BARU (1).html" class="btn">Yes</a> 
+	      		<a href="#close" class="btn">Cancel</a> 
+	    	</div>
+	  	</div>
+	</div>
+
 </body>
 </html>
 </DOCTYPE>

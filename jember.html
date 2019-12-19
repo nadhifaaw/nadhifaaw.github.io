@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Detourism</title>
+    <link rel="stylesheet" type="text/css" href="home BARU (1).css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#inputan").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#bodimu #rownya").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+</head>
+<body>
+<div class="wisata">
+    <center><h2>Jember</h2></center>
+    <div class="search1">
+        <center>
+            <label><img src="icons8-search-128.png" type="search" width="20px" height="15px"></label>
+
+            <input id="inputan" class="search" type="text" placeholder="Search Destination" width="200">
+        </center> &nbsp;
+    </div>
+
+    <center>
+        <table width="900px">
+            <thead>
+                <tr>
+                    <td rowspan="1">No</td>
+                    <td rowspan="2">Destinasi</td>
+                    <td rowspan="3">Alamat</td>
+                    <td rowspan="4"></td>
+                </tr>
+            </thead>
+            <tbody id="bodimu">
+                <tr id="rownya">
+                    <td>1</td>
+                    <td>Pantai Papuma</td>
+                    <td>Arean kebun, lojejer, Wuluhan Jember, Jawa Timur</td>
+                    <td><a href="info Papuma.html"> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>2</td>
+                    <td>Panta Bandealit</td>
+                    <td>Arean Hutan Andong Rejo, Tempurejo, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>3</td>
+                    <td>Kantor Desa Kemuningsari Kidul</td>
+                    <td>Desa Kemuningsari Kidul, Kec.Jenggawah, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>4</td>
+                    <td>Pantai Payangan</td>
+                    <td>Sido Mulyo, Sumberejo, Ambulu, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>5</td>
+                    <td>Wana Wisata Simbat</td>
+                    <td>Sumberejo, Tamansari, Wuluhan, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>6</td>
+                    <td>Pantai Getem</td>
+                    <td>Kalimalang, Mojomulyo,Puger, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>7</td>
+                    <td>Bukit Pasir Puger</td>
+                    <td>Pantai Pancer, Manderan II, Pger Kulon, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>8</td>
+                    <td>Teluk Love</td>
+                    <td>Jalan Ambulu - Watu Ulo, Sidomulyo, Sumberrejo, Ambulu, Jember, Jawa Timur</td>
+                    <td><a href="info Teluk Love.html"> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>9</td>
+                    <td>Dira Park</td>
+                    <td>Jalan Kota Blate Km.4, Andongsari, Ambulu, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>10</td>
+                    <td>Desa Paduman</td>
+                    <td>Panduman, Jelbug, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>11</td>
+                    <td>Air Terjun Tancak</td>
+                    <td>Suci, Panti, Area Peg.Argopuro, Jember, Jawa Timur</td>
+                    <td><a href="info Air Terjun Tancak.html"> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>12</td>
+                    <td>Air Terjun Antrokan</td>
+                    <td>Kalitengan, Manggisan, Tanggul, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>13</td>
+                    <td>Pantai Watu Ulo</td>
+                    <td>Sumberejo, Ambulu, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>14</td>
+                    <td>Air Terjun Rayap</td>
+                    <td>Desa Kemuning Lor, Kec.Arjasa, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>15</td>
+                    <td>Gunung Sepikul</td>
+                    <td>Jl. P.B. Sudirman, Kec. Pakusari, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>16</td>
+                    <td>Taman Botani</td>
+                    <td>Jl. Mujahir, Sukorambi, Krajan, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+                <tr id="rownya">
+                    <td>17</td>
+                    <td>Tiara Park</td>
+                    <td>Jl. Kaliurang, Sumbersari, Krajan Barat, Jember, Jawa Timur</td>
+                    <td><a href=""> Lihat Info</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>
+
+</body>
+</html>
