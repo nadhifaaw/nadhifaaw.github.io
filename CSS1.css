@@ -30,6 +30,7 @@ body {
     width: 180px;
     height: auto; 
 }     
+
 .signUp{
     background-color: rgba(0,128,0,0.3);
     margin-left: 275px;
@@ -103,8 +104,7 @@ input[type="button"]{
     margin-bottom: 10px;
     width: 120px;
     height: 32px;
-    background: black;
-    border: none;
+    background-color: black;
     border-radius: 10px;
     color: #fff;
     font-family: sans-serif;
@@ -114,45 +114,47 @@ input[type="button"]{
     margin-top: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-    .atas1 {
-    width: 50%;
-    }
-    .atas2{
-    width: 50%;
-    }
-    .signUp {
-    width: 50%;
-    }
-    .bawah1 {
-    width: 50%;
+.button a:hover {
+    opacity: 0.8;
+}
+
+* a:hover{
+    opacity: 0.5;
+}
+
+/* responsive */
+@media only screen and (max-width: 500px) {
+    .atas1 .atas {
+    width: 40%;
     }
     .wrapper {
-    width: 50%;
+    width: 40%;
+    }
+    .signUp {
+    width: 40%{
+    }
+    .bawah1 {
+    width: 40%;
     }
     .bawah2 {
-    width: 50%;
+    width: 40%;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    .atas1 {
-    width: 25%;
-    }
-    .atas2{
-    width: 25%;
-    }
-    .signUp {
-    width: 25%;
-    }
-    .bawah1 {
-    width: 25%;
+    .atas1 .atas {
+    width: 20%;
     }
     .wrapper {
-    width: 25%;
+    width: 20%;
+    }
+    .signUp {
+    width: 20%{
+    }
+    .bawah1 {
+    width: 20%;
     }
     .bawah2 {
-    width: 25%;
+    width: 20%;
     }
 }
-

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
 	<title>SignUp-DeTourism: Wisata Daerah Karasid</title>
-	<link rel="stylesheet" type="text/css" href="Register BARU.css">
+	<link rel="stylesheet" type="text/css" href="CSS1.css">
 	<div class="atas1">
 		<h5>Welcome! to</h5>
 	</div>
@@ -14,44 +14,54 @@
 <body>
 	<div class="signUp">
 		<center><h2>Sign Up</h2></center>
-		<div>
-			<p id="demo" style="color:red"></p>
-			<label>Full Name</label>
-			<input type="text" placeholder="full name" required>
-			<label>Password</label>
-			<input type="password" placeholder="password" required>
-		</div>
-		<div>
-			<p id="demo" style="color:red"></p>
-			<label>User Name</label>
-			<input type="text"  id="username" placeholder="user name" required>
-			<label>Password Confirmation</label>
-			<input type="password" id="password" placeholder="password confirmation" required>
-		</div>
-		<div>
-			<label>Email</label>
-			<input type="text" placeholder="email" required>
-		</div>
-		<div class="button">
-			<input type="button" onclick="login()" value="Register"><a href="LOGIN.html"></a>
-		</div>
+		<form class="" action="index.html" method="post" name="frm">
+			<div class="form">
+				
+				<label>Full Name</label>
+				<input type="text" placeholder="full name" required="">
+
+				<label>Password</label>
+				<p id="demo">
+				<input type="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z].{8,}" title="at least one number and one uppercase and lowercase letter,and at least 8 or more characters" required>
+
+				<label>User Name</label>
+				<input type="text"  id="username" placeholder="user name" required>
+
+				<label>Password Confirmation</label>
+				<input type="password" id="password" placeholder="password confirmation" required>
+
+				<label>Email</label>
+				<input type="text" id="email" placeholder="email" required>
+
+				<div class="button">
+					<center><a href="LOGIN.html"><input type="button" value="Register" onclick="return IsEmpty();"></a></center>
+				</div>
+			</div>
+		</form>
+
 		<center>
 			<h4>Already have an account?</h4>
 			<h4>LogIn now!</h4>
 			<u><h4><font color="BLUE"><a href="LOGIN.html">LogIn</a></font></h4></u>
 		</center>
 	</div>
-	<div class="bawah">
+	<div class="bawah1">
 		<center>
 			<h4>Explore your tours in the besuki area : Jember City, Banyuwangi City, Bondowoso City, Situbondo City</h4>
 		</center>
 	</div>
-	<script type="text/javascript">
-		function login (){
-			confirm("Klik,untuk lanjutkan")
-  			return true
-		}
-	</script>
+	<!-- validasi -->
+    <script type="text/javascript">
+        function IsEmpty (){
+            if (document.forms['frm'].password .value === "") {
+              alert("please fill in the forms first.. or check your password");
+              return false;
+            }
+              confirm("Click, to Continue");
+            return true;
+          }
+    </script>
+
 </body>
 </html>
 </DOCTYPE>

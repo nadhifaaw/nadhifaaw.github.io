@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beranda</title>
+    <link rel="stylesheet" href="home Baru (1).css">
+</head>
+<body>
+    <nav class="navigasi">
+      <img src="background.jpg" width="10%" style="float:left; margin-left:5%">
+        <ul class="menu">
+            <li><a href="">Beranda</a></li>
+            <li><a href="#TentangKami2">Tentang Kami</a></li>
+            <li><a href="#Kontak2">Kontak Kami</a></li>
+            <li><a href="index.html"><button class="btn-daftar">Daftar</button></a></li>
+            <li><a href="LOGIN.html"><button class="btn-login">Masuk</button></a></li>
+        </ul>
+    </nav>
+    <div class="welcome" >
+            <h1>Welcome to!</h1>
+            <h1>DeTourism</h1>
+    </div>
+    <div class="aboutus" id= "aboutus">
+        <div class="judul1">
+            <h1 class="font-jumbotron">About Us</h1>
+            <p class="font-biasa">"Website ini menyedikan pemesanan tiket wisata daerah Keresidenan Besuki secara online"</p>
+        </div>
+        </div>
+    </div>
+    <div class="content2" id="Event">
+        <div class="judul1">
+            <h1 class="font-jumbotron">Kitchen Dinner</h1>
+            <h2 class="text">FITUR</h2>
+        </div>
+        <div class="kolom-besar" id="TentangKami">
+            <div class="kolom">
+                <p class="font-biasa">BEBAGAI RESEP</p>
+                <div class="isi">
+                    Kami banyak menyediakan resep makanan dan minuman yang up to date.
+                </div>
+            </div>
+            <div class="kolom">
+                <p class="font-biasa">DIAKSES DIMANAPUN</p>
+                <div class="isi">
+                    Keinginan dalam belajar memasak dapat diakses dimana saja dan kapan saja.
+                </div>
+            </div>
+            <div class="kolom">
+                <p class="font-biasa">INFO EVENT</p>
+                <div class="isi">
+                  Kami menyediakan berbagai macam info Event tentang lomba ataupun seminar memasak.
+                </div>
+            </div>
+            <div class="kolom">
+                <p class="font-biasa">KELAS</p>
+                <div class="isi">
+                  Kami menyediakan kelas bagian kalian yang ingin belajar lebih, terdapat 2 kelas yaitu privat dan regular.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content1" id="TentangKami2">
+        <div class="judul1">
+            <h1 class="font-jumbotron">Tentang kami</h1>
+        </div>
+        <div class="kolom-besar" style="padding-bottom:10%">
+            <div class="kolom3">
+                <p class="font-biasa">Kitchen Dinner merupakan sebuah website yang di gunakan untuk menyediakan informasi berbagai macam resep masakan dan sebagai wadah berbagai informasi dalam meningkatkan kreasi makanan</p>
+            </div>
+            <div class="kolom3">
+              <img src="icon/phone-46-512.gif" alt="">
+                <p class="font-biasa">087755382226</p>
+            </div>
+            <div class="kolom3">
+              <img src="icon/instagram.gif" alt="">
+                <p class="font-biasa">KitchenDinner</p>
+            </div>
+            <div class="kolom3">
+              <img src="icon/facebook.gif" alt="">
+                <p class="font-biasa">Kitchen Dinner</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="content2 animate slideInDown delay-2" id="Kontak2">
+        <div class="container" style="padding-bottom:10%;">
+            <div class="judul-login">
+                <h1 class="font-jumbotron">Kontak Kami</h1>
+                <p>Hubungi kami jika ada kritik, saran, atau pertanyaan</p>
+              </div>
+              <form class="" action="index.html" method="post" name="frm">
+          <div class="box">
+            <div class="form">
+                <input type="nama" style="outline:none" name="nama" placeholder="Nama" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <input type="text" name="Perihal Pesan" placeholder="Perihal Pesan" required>
+            <input type="Nomor Telepon" name="Nomor Telepon" placeholder="Nomor Telepon" required>
+            <textarea name="name" rows="8" cols="80" class="ketikpesan" placeholder="Pesan" required></textarea>
+            <button class="btn" type="submit" name="button" onclick="return IsEmpty();">KIRIM</button>
+          </div>
+          </form>
+        </div>
+    </div>
+        <div class="content1" id="TentangKami2">
+            <div class="judul1" style="margin-bottom:-1%; margin-top: -5%;">
+                <h1 class="font-jumbotron"></h1>
+                <img class="logo"src="icon/facebook.gif" alt="">
+                <img class="logo" src="icon/instagram.gif" alt="">
+                <img class="logo" src="icon/phone-46-512.gif" alt="">
+                <p class="copy">Copyright @2019 KitchenDinner.Com Offered by MyTeam</p>
+            </div>
+        </div>
+
+        <!-- validasi -->
+            <script type="text/javascript">
+          function IsEmpty() {
+
+            if (document.forms['frm'].password.value === "") {
+              alert("Harap Isi Formnya ya");
+              return false;
+            }
+              confirm("Klik,untuk lanjutkan");
+            return true;
+          }
+            </script>
+
+    <!-- test -->
+
+</body>
+</html>

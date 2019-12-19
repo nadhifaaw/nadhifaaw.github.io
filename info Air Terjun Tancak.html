@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Info Air Terjun Tancak-DeTourism: Wisata Daerah Karasid</title>
-	<link rel="stylesheet" type="text/css" href="info.css">
-	<div class="atas1">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Info-Detourism: Wisata Daerah Karasid</title>
+    <link rel="stylesheet" type="text/css" href="CSS2.css">
+    <div class="atas1">
 		<h5>Welcome! to</h5>
 	</div>
 	<div class="atas2">
@@ -26,18 +27,23 @@
 		<div class="gambar">
 			<img id="gambar" src="air terjun tancak.jpeg">
 		</div>
+		<form class="form" action="index.html" method="post" name="frm">
 		<div class="checkbox">
-			<table>
-				<tr>
-					<td><input type="checkbox">Tiket Masuk Air Terjun</td>
-					<td><h4>Rp 5.000/orang</h4></td>
-				</tr>
-				<tr>
-					<td><a href="Pesan DeTourism BARU.html"><input type="button" value="Done"></a></td>
-				</tr>
-			</table>
+			<input type="checkbox">Tiket Masuk Air Terjun<h4>Rp 5.000/orang</h4>
+			<a href="Pesan DeTourism BARU.html"><input type="button" value="Done"></a>
 		</div>
 	</div>
+	<!-- validasi -->
+    <script type="text/javascript">
+          function IsEmpty (){
+            if (document.forms['frm'].password .value === "") {
+              alert("please fill in the forms first..");
+              return false;
+            }
+              confirm("Are you sure want to edit your profile account?");
+            return true;
+          }
+    </script>
 </body>
 </html>
 </DOCTYPE>

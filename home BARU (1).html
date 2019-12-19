@@ -5,7 +5,8 @@
     <meta charset="utf-8">
 	<title>Home-DeTourism: Wisata Daerah Karasid</title>
 	<link rel="stylesheet" href="home BARU (1).css">
-    <link rel="icon" type="image/png" href="gambar/logo.png">
+    <link rel="icon" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -13,9 +14,10 @@
 		<h5>Welcome! to</h5>
 	</div>
 	<div class="atas2">
-		<i><font type= "logo" size="10" color="BLACK">DeTourism</font></i>
+		<i><font type= "logo" size="10" color="BLACK">Detourism</font></i>
 	</div>
 
+	</div>
 	<div class="akun">
 		<table>
 			<tr>
@@ -23,68 +25,98 @@
 				<td><h2>Nabilla12</h2></td>
 			</tr>
 		</table>
-		</div>
-		
+	</div>
+	<div class="profile">
 
+		<table>
+			<tr>
+				<td><a href="#modal-one" type="button"><img src="settings.png" width="20px" height="20px" ></a></td>
+				<td><h4>Settings</h4></td>
+			</tr>
+			<tr>
+				<td><a href="#modal-two" type="button"><img src="logout.png" width="20px" height="20px" ></a></td>
+				<td><h4>Logout</h4></td>
+			</tr>
+		</table>
 	</div>
 
 	<div class="search1">
 		<center>
-			<table>
-				<tr>
-					<label><img src="icons8-search-128.png" type="search" width="20px" height="15px"></label>
-					<input class="search" type="text" placeholder="Search Destination" width="200">
-				</tr>	
-			</table>
+			<label><img src="icons8-search-128.png" type="search" width="20px" height="15px"></label>
+
+			<input class="search" type="text" placeholder="Search Destination" width="200">
 		</center>
 	</div>
 
 	<div class="Jember">
 		<div class="wisata">
-	       	<a href="info Papuma.html "><h2>Pantai Papuma</h2></a>
-	        <a href="info Papuma.html"><img id="gambar" src="pw pantai papuma.jpeg"></a>
-          </div>
-  		<div class="wisata">
-           	<a href="info Teluk Love.html"><h2>Teluk Love</h2></a>
-         	<a href="info Teluk Love.html"><img id="gambar" src="pw teluk love.jpeg"></a>
-    	</div>
-		<div class="wisata">
-			<a href="info Air Terjun Tancak.html "><h2>Air Terjun Tancak</h2></a></td>
-			<a href="info Air Terjun Tancak.html"><img id="gambar" src="pw air terjun tancak.jpeg"></a>
-	    </div>
-		<div class="wisata">
-			<a href="info KopiKakao.html "><h2>Agrowisata Balai Penelitian Kopi dan Kakao</h2></a></td>
-			<a href="info KopiKakao.html"><img id="gambar" src="pw kopi kakao.jpeg"></a>
-	    </div>
+	       	<a href="info Papuma.html "><h2>Jember</h2></a>
+	        <a href="info Papuma.html"><img id="gambar" src="pw pantai papuma.jpeg"></a> 
+	        <center><a href="jember.html">Info selengkapnya</a></center>
+        </div>
     </div>
 
 	<div class="Banyuwangi">
 		<div class="wisata">
-	        <a href=".html"><h2>Kawah Ijen</h2></a>
-	        <a href=".html"><img id="gambar" src="pw kawah ijen.jpeg"></a>
-	    </div>
-		<div class="wisata">
-            <a href="info DeTourism BARU.html "><h2>Bangsring UnderWater</h2></a>
-            <a href="info DeTourism BARU.html"><img id="gambar" src=" pw bangsring.jpeg"></a>
+            <a href="info Bangsring.html "><h2>Banyuwangi</h2></a>
+            <a href="info Bangsring.html"><img id="gambar" src=" pw bangsring.jpeg"></a>
+            <center><a href="info Bangsring.html">Info selengkapnya</a></center>
 	    </div>
 	</div>
 
 	<div class="Bondowoso">
 		<div class="wisata">
-            <a href=".html"><h2>Kawah Wurung</h2></a></td>
-            <a href=".html"><img id="gambar" src="pw kawah wurungg.jpeg"></a>
+            <a href="info Kawah Wurung.html"><h2>Bondowoso</h2></a></td>
+            <a href="info Kawah Wurung.html"><img id="gambar" src="pw kawah wurungg.jpeg"></a>
+            <center><a href="">Info selengkapnya</a></center>
 	    </div>
 	</div>
 
 	<div class="Situbondo">
 		<div class="wisata">
-           	<a href=".html"><h2>Pasir Putih</h2></a>
-  			<a href=".html"><img id="gambar" src="pw pasir putih.jpeg"></a>
-	    </div>
-		<div class="wisata">
-			<a href=".html"><h2>Baluran</h2></a>
-			<a href=".html"><img id="gambar" src="pw baluran.jpeg"></a>
+           	<a href="info Pasir Putih.html"><h2>Situbondo</h2></a>
+  			<a href="info Pasir Putih.html"><img id="gambar" src="pw pasir putih.jpeg"></a>
+  			<center><a href="">Info selengkapnya</a></center>
 	    </div>
 	</div>
+
+	<!-- Modal -->
+	<div class="modal" id="modal-one" aria-hidden="true">
+	  	<div class="modal-dialog">
+	    	<div class="modal-header">
+	      		<h2>Manage Account</h2>
+	      		<a href="#close" class="btn-close" aria-hidden="true">×</a> 
+	    	</div>
+	    	<div class="modal-body">
+	      		<h4><font color="GREEN">Edit Your Profile Account?</font></h4>
+	    	</div>
+	    	<div class="modal-footer">
+	      		<a href="editakun.html" class="btn">Yes</a> 
+	      		<a href="" class="btn">Cancel</a> 
+	    	</div>
+	  	</div>
+	</div>
+
+	<div class="modal" id="modal-two" aria-hidden="true"> 
+	  	<div class="modal-dialog">
+	    	<div class="modal-header">
+	      		<h2>LOGOUT</h2>
+	      		<a href="#close" class="btn-close" aria-hidden="true">×</a> 
+	    	</div>
+	    	<div class="modal-body">
+	      		<p><h4>Are you sure you want to logout from your account?</h4></p>
+	    	</div>
+	    	<div class="modal-footer">
+	      		<a href="LOGIN.html" type="button" class="btn">Yes</a>
+	      		<a href="#close" type="button" class="btn">No</a>
+	      		<a href="#close" type="button" class="btn">Cancel</a>
+
+	    	</div>
+	  	</div>
+	</div>
+
 </body>
 </html>
+
+
+</script>

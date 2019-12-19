@@ -3,6 +3,7 @@
 <head>
 	<title>EditAccount-DeTourism: Wisata Daerah Karasid</title>
 	<link rel="stylesheet" type="text/css" href="CSS1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<div class="atas1">
 		<h5>Welcome! to</h5>
 	</div>
@@ -14,39 +15,48 @@
 <body>
 	<div class="signUp">
 		<center><h2>Edit Account</h2></center>
-		<div>
-			<p id="demo" style="color:red"></p>
+		<form class="form" action="index.html" method="post" name="frm">
 			<label>Full Name</label>
 			<input type="text" placeholder="full name" required>
-			<label>Password</label>
-			<input type="password" placeholder="password" required>
-		</div>
-		<div>
-			<p id="demo" style="color:red"></p>
+
 			<label>User Name</label>
 			<input type="text"  id="username" placeholder="user name" required>
+
+			<label>Old Password</label>
+			<input type="password" placeholder="old password" required>
+
+			<label>Password</label>
+			<p id="demo">
+			<input type="password" placeholder="password"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z].{8,}" title="at least one number and one uppercase and lowercase letter,and at least 8 or more characters" required>
+
 			<label>Password Confirmation</label>
+			<p id="demo">
 			<input type="password" id="password" placeholder="password confirmation" required>
-		</div>
-		<div>
+
 			<label>Email</label>
 			<input type="text" placeholder="email" required>
-		</div>
-		<div class="button">
-			<a href="home BARU (1).html"><input type="button" onclick="login()" value="Save"></a>
-		</div>
+			<div class="button">
+				<center><a href="home BARU (1).html"><input type="button" onclick="return IsEmpty();" value="Save"></a></center>
+			</div>
+		</form>
 	</div>
 	<div class="bawah1">
 		<center>
 			<h4>Explore your tours in the besuki area : Jember City, Banyuwangi City, Bondowoso City, Situbondo City</h4>
 		</center>
 	</div>
-	<script type="text/javascript">
-		function login (){
-			confirm("Klik,untuk lanjutkan")
-  			return true
-		}
-	</script>
+	<!-- validasi -->
+    <script type="text/javascript">
+          function IsEmpty (){
+            if (document.forms['frm'].password .value === "") {
+              alert("please fill in the forms first..");
+              return false;
+            }
+              confirm("Are you sure want to edit your profile account?");
+            return true;
+          }
+    </script>
+
 </body>
 </html>
 </DOCTYPE>
